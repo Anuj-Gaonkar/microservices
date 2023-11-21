@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:C:/microservices/order-service/config-repo
+          clone-on-start: true
+  security:
+    user:
+      name: root
+      password: s3cr3t
